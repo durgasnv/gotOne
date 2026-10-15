@@ -6,7 +6,7 @@ Students sometimes need a small essential immediately but do not know who nearby
 
 ## Proposed experience
 
-gotOne connects students at the same campus for short, in-person loans. The requester describes an item and when they need it. A potential lender responds to that request. The requester chooses one offer, the pair agrees on a meeting place, and each records handoff and return confirmations.
+gotOne connects students at the same campus for short, in-person loans. Students verify their college email and enter a roll number and class/section in their profile. The requester describes an item, where to hand it over, and the borrowing duration. A potential lender taps **I've got this**. The requester chooses one offer, then the matched pair can see each other's class details and coordinate handoff and return.
 
 Examples: a calculator for an exam, a charger until the end of class, a lab coat for a practical, an umbrella during rain, or course notes for a day. The app should discourage requests for prohibited, unsafe, or highly valuable items through campus rules and reporting.
 
@@ -18,12 +18,12 @@ Examples: a calculator for an exam, a charger until the end of class, a lab coat
 
 ## Example journey
 
-A student in the library needs a USB-C charger for two hours. They post “USB-C charger,” choose “Library” as a broad pickup zone, and set a return time. Two students offer. The requester selects one; the other offer is declined. The matched pair agrees on a precise desk and optionally shares an in-app contact method. After meeting, both tap “Handed over.” Before the due time, both receive a reminder. When the charger is returned, both tap “Returned,” and the loan closes.
+A student in the library needs a USB-C charger for two hours. They post “USB-C charger,” choose “Library” as a broad zone, enter a precise desk privately, and request a two-hour loan. Two students tap **I've got this**. The requester selects one; the other offer is declined. The lender brings the charger to the desk and proposes a return pickup point, or sets one after handoff. Both confirm that the charger was received. The two-hour timer starts at the confirmed handoff. At the due time, both receive a notification. The borrower takes the charger to the agreed return point; both confirm its return. If they cannot meet, the matched pair can use their shared class/section details to arrange another handoff.
 
 ## Product principles
 
 - Ask for what is needed first. Browsing a lender inventory is optional future work.
-- Use a broad campus zone for discovery; reveal precise meeting and contact details only to the matched pair.
+- Use a broad campus zone for discovery; reveal roll number, class/section, precise meeting points, and contact details only to the matched pair.
 - Make acceptance and state changes explicit, so one request cannot accidentally create two active loans.
 - Treat disagreement as a real workflow: preserve the record and allow a moderator to review.
 - Keep the first pilot small enough for two contributors to build and support.
