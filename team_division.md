@@ -5,10 +5,10 @@ Use **Contributor A** and **Contributor B** until real names are assigned. These
 | Milestone | Contributor A: Flutter experience | Contributor B: Firebase and data | Shared checkpoint |
 | --- | --- | --- | --- |
 | 0. Pilot rules | Wireframes, form copy, accessibility checklist | Data/privacy outline, campus access rules | Agree on flows, allowed items, moderator, and retention |
-| 1. Foundation | Flutter scaffold, navigation, Riverpod setup, sign-in/profile UI | Firebase projects, Auth configuration, user schema, baseline rules, CI | Sign in on a device with a verified test account |
-| 2. Requests/offers | Request form/feed/detail, offer UI, filters and states | Request/offer repository, indexes, rules, emulator fixtures | Two accounts can post and offer safely |
-| 3. Match/loan | Match screen, private meeting form, loan timeline and confirmations | Transactional accept-offer function, loan state functions, permission tests | Run race and dual-confirmation tests together |
-| 4. Alerts/disputes | In-app notices, push handling, report UI | FCM triggers/scheduler, idempotency, dispute storage/moderator access | Test push denied and manual report handling |
+| 1. Foundation | Flutter scaffold, navigation, Riverpod setup, college email and roll/class profile UI | Firebase projects, Auth configuration, profile schema, baseline rules, CI | Verified test account completes profile before posting |
+| 2. Requests/offers | Request form/feed/detail, duration and handoff inputs, “I've got this” offer UI | Request/offer repository, indexes, private handoff storage, rules, emulator fixtures | Two accounts can post and offer without exposing private details in the feed |
+| 3. Match/loan | Match screen, matched-only identity view, return-point agreement, loan timeline and confirmations | Transactional accept-offer function, due-time calculation, loan state functions, permission tests | Run race, privacy, duration, and dual-confirmation tests together |
+| 4. Alerts/disputes | In-app notices, due-time push handling, report UI | FCM triggers/scheduler, idempotency, missing-location prompt, dispute storage/moderator access | Test push denied, due reminder, and manual report handling |
 | 5. Pilot | Device and accessibility fixes, release UI | Deployment scripts, monitoring, backup/retention checks | Both run release checklist and approve pilot |
 
 ## Working agreement
