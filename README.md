@@ -6,11 +6,11 @@ gotOne is a planned Flutter app for students who need to borrow an everyday item
 
 ## How the MVP works
 
-1. A student signs in with a verified campus account and creates a request with an item, brief description, broad campus pickup area, and needed-by and return-by times.
-2. Nearby students browse requests for their campus and submit offers. Several people may offer on the same request.
-3. The requester accepts one offer. The request closes to new offers; the other offers are declined. Only the matched pair can then see the agreed contact and precise meeting details.
-4. Both students confirm the physical handoff. The app records the due date and sends reminders.
-5. Both students confirm the return. If something goes wrong, either can open a dispute for manual review.
+1. A student signs in with a verified college email and completes a profile with their roll number and class/section. They request an item, enter how long they need it, and provide a broad pickup area plus a private exact handoff point.
+2. Nearby students browse requests for their campus and tap **I've got this** to offer the item. Several people may offer on the same request.
+3. The requester accepts one offer. The other offers are declined. Only the matched pair can see each other's roll number, class/section, contact preference, and exact handoff details.
+4. The lender brings the item to the agreed point. Both students confirm the handoff; the borrowing timer starts then. The lender can set a return pickup location with the offer or agree on one later.
+5. The app reminds both students when the item is due. The borrower returns it at the agreed location, and both confirm the return. If plans fail, the pair can use their shared class details to coordinate or open a dispute.
 
 “Nearby” in the MVP means the same campus and an optional building/zone filter. It does **not** require continuous location tracking. No payment or delivery is involved.
 
@@ -19,6 +19,7 @@ gotOne is a planned Flutter app for students who need to borrow an everyday item
 - Request-first: students need not maintain a list of items they own.
 - One accepted lender and one loan per request; multiple offers are allowed until acceptance.
 - Campus members sign in before viewing requests. Contact details are never shown in the public request list.
+- Roll numbers, class/section, and exact meeting points are visible only to the matched pair and authorized moderators, never in the campus feed.
 - The app records confirmations; students still arrange and perform the handoff themselves.
 - Disputes are recorded and reviewed manually; the MVP does not decide liability or process payments.
 
