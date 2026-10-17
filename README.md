@@ -2,7 +2,7 @@
 
 gotOne is a planned Flutter app for students who need to borrow an everyday item on campus for a short time. A student posts a request for a charger, calculator, lab coat, umbrella, notes, or similar essential. Other students can offer one, agree on a handoff, and record when the item is returned.
 
-**Project status:** planning and documentation. This repository does not yet contain a Flutter application.
+**Project status:** Flutter frontend demo implemented in [`gotone_app/`](gotone_app/README.md), based on the local HTML design prototype. Backend integration and pilot deployment remain planned.
 
 ## How the MVP works
 
@@ -31,9 +31,17 @@ gotOne is a planned Flutter app for students who need to borrow an everyday item
 - [Two-person ownership](team_division.md)
 - [Technical choices and data model](tech_stack.md)
 
-## Getting started (after the app scaffold lands)
+## Getting started
 
-Install the Flutter SDK, Android Studio or Xcode as appropriate, and the Firebase CLI. Create a Firebase project for development, register the Flutter app, and use FlutterFire CLI to generate local Firebase configuration. From the Flutter project root, run `flutter pub get`, `flutter analyze`, `flutter test`, then `flutter run`. The exact package setup and Firebase project IDs will be documented when code is added. Do not commit service-account keys, private credentials, or local environment files.
+Install Flutter 3.44.1 or newer, then run:
+
+```sh
+cd gotone_app
+flutter pub get
+flutter run -d chrome
+```
+
+See the [frontend README](gotone_app/README.md) for implemented flows, demo controls, native platform requirements, and backend boundaries. Run `flutter analyze`, `flutter test`, and `flutter build web` to validate the frontend. The app uses local sample data and needs no Firebase credentials.
 
 ## Contributing
 
